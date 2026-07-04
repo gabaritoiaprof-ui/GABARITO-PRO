@@ -1,0 +1,137 @@
+{
+  "classes": [
+    {
+      "id": "class-1",
+      "name": "sala 01"
+    },
+    {
+      "id": "class-2",
+      "name": "sala 02"
+    }
+  ],
+  "students": [
+    {
+      "id": "std-1",
+      "name": "ADRIA LORENA TAVEIRA DE SOUZA",
+      "registration": "1",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-2",
+      "name": "AMOS NASCIMENTO DE ALMEIDA",
+      "registration": "2",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-3",
+      "name": "ATILA EMANUEL DE SOUZA GUEDES",
+      "registration": "3",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-4",
+      "name": "DANIEL BERG DOS SANTOS BARROSO",
+      "registration": "4",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-5",
+      "name": "DEBORA DO NASCIMENTO SARAIVA",
+      "registration": "5",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-6",
+      "name": "DIEGO REIS FERREIRA",
+      "registration": "6",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-7",
+      "name": "ELDERNEY",
+      "registration": "N/A",
+      "classId": "class-1"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam-1",
+      "name": "av1",
+      "classId": "class-1",
+      "subject": "LÍNGUA PORTUGUESA",
+      "questionsCount": 20,
+      "questionValue": 0.5,
+      "answerKey": {
+        "1": "A",
+        "2": "B",
+        "3": "C",
+        "4": "D",
+        "5": "E",
+        "6": "A",
+        "7": "B",
+        "8": "C",
+        "9": "D",
+        "10": "E",
+        "11": "A",
+        "12": "B",
+        "13": "C",
+        "14": "D",
+        "15": "E",
+        "16": "A",
+        "17": "B",
+        "18": "C",
+        "19": "D",
+        "20": "E"
+      },
+      "createdAt": "2026-06-24T14:00:00.000Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "res-1",
+      "examId": "exam-1",
+      "studentId": "std-7",
+      "studentName": "ELDERNEY",
+      "answers": {
+        "1": "A",
+        "2": "C",
+        "3": "B",
+        "4": "B",
+        "5": "E",
+        "6": "C",
+        "7": "D",
+        "8": "A",
+        "9": "C",
+        "10": "E"
+      },
+      "score": 3.3,
+      "correctCount": 3,
+      "incorrectCount": 7,
+      "timestamp": "2026-06-24T14:07:25.000Z",
+      "feedback": "O aluno acertou apenas algumas das questões previstas no gabarito oficial. É recomendada a revisão dos conteúdos relacionados às questões 2, 3 e 4. (Nota vinculada à turma e série do aluno selecionado.)"
+    },
+    {
+      "id": "res-2",
+      "examId": "exam-1",
+      "studentId": "guest-1",
+      "studentName": "Não identificado",
+      "answers": {
+        "1": "A",
+        "2": "C",
+        "3": "B",
+        "4": "B",
+        "5": "E",
+        "6": "C",
+        "7": "D",
+        "8": "A",
+        "9": "C",
+        "10": "E"
+      },
+      "score": 3.3,
+      "correctCount": 3,
+      "incorrectCount": 7,
+      "timestamp": "2026-06-24T14:07:25.000Z",
+      "feedback": "Desempenho em recuperação. Precisa revisar conceitos básicos e refazer exercícios das aulas 2 e 3."
+    }
+  ]
+}

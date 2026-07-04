@@ -1,0 +1,101 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User account for a teacher or administrator",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "name": { "type": "string" },
+        "school": { "type": "string" },
+        "role": { "type": "string" },
+        "subject": { "type": "string" },
+        "license": { "type": "string" },
+        "maxQuota": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "daysAllowed": { "type": "number" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "email", "name"]
+    },
+    "Class": {
+      "title": "Class",
+      "description": "School class or room managed by the teacher",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    },
+    "Student": {
+      "title": "Student",
+      "description": "Student enrolled in a class",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "registration": { "type": "string" },
+        "classId": { "type": "string" }
+      },
+      "required": ["id", "name", "registration", "classId"]
+    },
+    "Exam": {
+      "title": "Exam",
+      "description": "Exam template with answer keys",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "classId": { "type": "string" },
+        "subject": { "type": "string" },
+        "questionsCount": { "type": "number" },
+        "questionValue": { "type": "number" },
+        "answerKey": { "type": "object" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "name", "classId", "questionsCount", "answerKey"]
+    },
+    "Result": {
+      "title": "Result",
+      "description": "Corrected exam result for a student",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "examId": { "type": "string" },
+        "studentId": { "type": "string" },
+        "studentName": { "type": "string" },
+        "answers": { "type": "object" },
+        "score": { "type": "number" },
+        "correctCount": { "type": "number" },
+        "incorrectCount": { "type": "number" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "feedback": { "type": "string" }
+      },
+      "required": ["id", "examId", "studentId", "score", "correctCount", "incorrectCount"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Profile information of the users"
+    },
+    "/user_data/{userId}/classes/{classId}": {
+      "schema": "Class",
+      "description": "Classes belonging to a user"
+    },
+    "/user_data/{userId}/students/{studentId}": {
+      "schema": "Student",
+      "description": "Students belonging to a user"
+    },
+    "/user_data/{userId}/exams/{examId}": {
+      "schema": "Exam",
+      "description": "Exams belonging to a user"
+    },
+    "/user_data/{userId}/results/{resultId}": {
+      "schema": "Result",
+      "description": "Corrected exam results belonging to a user"
+    }
+  }
+}

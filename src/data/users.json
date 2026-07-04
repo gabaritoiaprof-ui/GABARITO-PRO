@@ -1,0 +1,30 @@
+[
+  {
+    "id": "gabaritoiaprof_gmail_com",
+    "email": "gabaritoiaprof@gmail.com",
+    "password": "19891950Hell",
+    "name": "Prof. Elderney Reis",
+    "school": "Escola Estadual Castro Alves",
+    "role": "Administrador / Professor Titular",
+    "subject": "Língua Portuguesa & Literatura",
+    "license": "Premium Individual",
+    "maxQuota": 220,
+    "createdAt": "2026-06-24T23:09:13.086Z",
+    "daysAllowed": 99999,
+    "status": "active"
+  },
+  {
+    "id": "user-1782361069630",
+    "email": "elderneydocesoares@gmail.com",
+    "password": "19891950Hell",
+    "name": "nilda",
+    "school": "ceti",
+    "role": "Professor(a) Titular",
+    "subject": "portugues",
+    "license": "Premium Individual",
+    "maxQuota": 220,
+    "createdAt": "2026-06-25T04:17:49.630Z",
+    "daysAllowed": 3,
+    "status": "active"
+  }
+]

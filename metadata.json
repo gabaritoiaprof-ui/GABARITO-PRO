@@ -1,0 +1,10 @@
+{
+  "name": "Remix: Gabarito IA",
+  "description": "Sistema inteligente de correção automática de provas por foto usando Inteligência Artificial e QR Code.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

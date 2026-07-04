@@ -1,0 +1,138 @@
+{
+  "classes": [
+    {
+      "id": "class-1",
+      "name": "Sala 01 (9º Ano EF)"
+    },
+    {
+      "id": "class-2",
+      "name": "Sala 02 (8º Ano EF)"
+    }
+  ],
+  "students": [
+    {
+      "id": "std-1",
+      "name": "JOÃO SILVA COSTA",
+      "registration": "1",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-2",
+      "name": "MARIA OLIVEIRA",
+      "registration": "2",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-3",
+      "name": "PEDRO SANTOS",
+      "registration": "3",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-4",
+      "name": "ANA COSTA ARAÚJO",
+      "registration": "4",
+      "classId": "class-1"
+    },
+    {
+      "id": "std-5",
+      "name": "DIEGO REIS FERREIRA",
+      "registration": "5",
+      "classId": "class-1"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam-1",
+      "name": "Simulado Mensal de Língua Portuguesa",
+      "classId": "class-1",
+      "subject": "Língua Portuguesa",
+      "questionsCount": 10,
+      "questionValue": 1,
+      "answerKey": {
+        "1": "A",
+        "2": "C",
+        "3": "B",
+        "4": "D",
+        "5": "E",
+        "6": "B",
+        "7": "A",
+        "8": "D",
+        "9": "C",
+        "10": "E"
+      },
+      "createdAt": "2026-06-28T16:19:34.774Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "res-1",
+      "examId": "exam-1",
+      "studentId": "std-1",
+      "studentName": "JOÃO SILVA COSTA",
+      "answers": {
+        "1": "A",
+        "2": "C",
+        "3": "B",
+        "4": "D",
+        "5": "E",
+        "6": "A",
+        "7": "A",
+        "8": "D",
+        "9": "D",
+        "10": "E"
+      },
+      "score": 8,
+      "correctCount": 8,
+      "incorrectCount": 2,
+      "timestamp": "2026-06-29T16:19:34.774Z",
+      "feedback": "Excelente desempenho! Revise as questões de interpretação textual de tirinhas para fixar."
+    },
+    {
+      "id": "res-2",
+      "examId": "exam-1",
+      "studentId": "std-2",
+      "studentName": "MARIA OLIVEIRA",
+      "answers": {
+        "1": "A",
+        "2": "C",
+        "3": "B",
+        "4": "D",
+        "5": "E",
+        "6": "B",
+        "7": "A",
+        "8": "D",
+        "9": "C",
+        "10": "E"
+      },
+      "score": 10,
+      "correctCount": 10,
+      "incorrectCount": 0,
+      "timestamp": "2026-06-29T16:19:34.774Z",
+      "feedback": "Desempenho espetacular! Nota máxima!"
+    },
+    {
+      "id": "res-3",
+      "examId": "exam-1",
+      "studentId": "std-5",
+      "studentName": "DIEGO REIS FERREIRA",
+      "answers": {
+        "1": "B",
+        "2": "C",
+        "3": "A",
+        "4": "D",
+        "5": "C",
+        "6": "B",
+        "7": "A",
+        "8": "B",
+        "9": "C",
+        "10": "D"
+      },
+      "score": 5,
+      "correctCount": 5,
+      "incorrectCount": 5,
+      "timestamp": "2026-07-03T16:19:34.774Z",
+      "feedback": "Você dominou metade da prova. Revise crase e regência nominal."
+    }
+  ]
+}
